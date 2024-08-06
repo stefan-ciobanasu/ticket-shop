@@ -1,0 +1,45 @@
+routes:
+  homepage:
+    request: '/'
+    controller: IndexController
+    method: indexAction
+  admin:
+    request: '/admin'
+    controller: AdminController
+    method: indexAction
+  admin_edit_event:
+    request: '/admin/edit_event'
+    controller: AdminController
+    method: editEventAction
+  admin_delete_event:
+    request: '/admin/delete_event'
+    controller: AdminController
+    method: deleteEventAction
+  user:
+    request: '/user'
+    controller: UserController
+    method: indexAction
+  user_login:
+    request: '/user/login'
+    controller: UserController
+    method: loginAction
+  user_logout:
+    request: '/user/logout'
+    controller: UserController
+    method: logoutAction
+  user_register:
+    request: '/user/register'
+    controller: UserController
+    method: registerAction
+  user_forgot_password:
+    request: '/user/forgot'
+    controller: UserController
+    method: forgotAction
+  user_reset_password:
+    request: '/user/reset_password'
+    controller: UserController
+    method: resetPasswordAction
+  user_buy_tickets:
+    request: '/user/buy_tickets'
+    controller: UserController
+    method: buyTickets
